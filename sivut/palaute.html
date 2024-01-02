@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="../tyylisivut/palaute.css" />
+            <button onclick="topFunction()" id="ylos" title="Alkuun">Alkuun</button> 
+        </head>
+<body>
+        <div>
+            <header>
+                <div class="flex-container">
+                    <h1>Yhdessä opitaan!</h1>
+                </div>
+                <div class="munnav">
+                    <a href="../index.html" class="linkki">Kotisivu</a>
+                    <a href="materiaali.html" class ="linkki">Materiaali</a>
+                    <a href="palaute.html" class = "linkki active">Palaute</a>
+                    <a href="yhteystiedot.html" class = "linkki">Yhteystiedot</a>
+                </div> 
+            </header>
+        </div>
+            <main>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Slabo+27px&display=swap" rel="stylesheet">
+                <div>
+                    <!-- Tämä palaute koodi on täälä olemassa, mutta ei se oikeasti vielä sähköpostia lähetä, se on placebo palauteboksi :-) -->
+                <h2>Palaute</h2>       
+                    <form method="post" action="kiitos.html">
+                    <p><label>Etunimi: <small>(ei pakollinen)</small><br><input type="text" name="etunimi"></label> </p> <!-- päätin että ei ole "required", koska palautetta voi antaa anonyymistikkin samoin sähköpostin kanssa-->
+                    <p><label>Sähköposti: <small>(ei pakollinen)<br><input type="email" name="sahkoposti"></label></p>
+                    <p><label>Palaute: <small>(max. 500 kirjainta)</small><br><textarea name="kommentti" maxlength="500" required></textarea></label></p>
+                    <p><button>Lähetä</button></p> 
+                    <!--Halusin ensin tästä tehdä mun dynaamisyyden, mutta en vielä oppinut .php tiedostojen käyttöä, joten
+                    en saanut niitä sähköpostiin lähetettyä, jätin tämän kuitenkin tänne ihan tutkimista varten.-->
+                    <p> Ikävä kyllä en koskaan saanut tätä valmiiksi, koska .php tiedostot ovat minulle vielä vähän hepreaa, en kuitenkaa tätä täältä poistanut, koska saatan siihen vielä palata ja viimeistellä. Ikävä kyllä aika loppui kesken, joten tämän dynaamisuus on hajalla. Voit kuitenkin siirtyä sivulle kiitos.html täyttämällä kentät ja painamalla "lähetä". Tiedot eivät tallennu minnekkään eikä niitä myöskään lähetetä minnekkään. Ainut asia mitä tapahtuu on, että sinut redirectataan sivulle kiitos.html.</p>
+                    </form>
+                </div>
+            </main>
+        </div>
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <a href="https://www.facebook.com/profile.php?id=100077152784502" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kai_katajisto/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <br>
+                        <br>
+                        <li><a href="../sivut/yhteystiedot.html" target="_blank">Ota Yhteyttä</a></li>
+                        <li><a href="https://code.visualstudio.com/" target="_blank">VSC</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+                    <div class="row">
+            </footer>
+        </div>
+    <script>
+        let ylosnappi = document.getElementById("ylos");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 380) {
+         ylos.style.display = "block";
+          } else {
+         ylos.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.documentElement.scrollTop = 0;
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="../tyylisivut/materiaali.css" />
+            <button onclick="topFunction()" id="ylos" title="Alkuun">Alkuun</button>
+        </head>
+<body>
+        <div>
+            <header>
+                <div class="flex-container">
+                    <h1>Yhdessä opitaan!</h1>
+                </div>
+                <div class="munnav">
+                    <a href="../index.html" class="linkki">Kotisivu</a>
+                    <a href="materiaali.html" class ="linkki active">Materiaali</a>
+                    <a href="palaute.html" class = "linkki">Palaute</a>
+                    <a href="yhteystiedot.html" class = "linkki">Yhteystiedot</a>
+                </div> 
+            </header>
+        </div>
+            <main>
+                <h2> Materiaali</h2>
+                <p> Tässä pelkkää filleri tekstiä. Dynaamisuus löytyy alhaalta, niin kuin etusivulla mainitsin, testailin kaikkea outoa ja erikoista. <br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    asdasdasd<img src="../kuvat/w3schools.jpg" alt="W3Schools">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                    <p id="varit">HTML:n sisällä voi myös käyttää omia pieniä (tai isoja) JavaScriptejä, riippuen kuinka paljon kaaosta haluaa!</p>
+                    <script>
+                        function Varit(){
+                            document.getElementById("varit").style.fontSize = "3vw"; 
+                            document.getElementById("varit").style.color = "red";
+                            document.getElementById("varit").style.alignItems = "left";
+                        }
+                    </script>
+                        <div>
+                            <button type="button" onclick="Varit()">Paina tästä</button>
+                        </div>
+                    <p id="teksti"> JavaScript on siitä hauska, että sillä voi suorittaa melkein minkälaista tahansa dynaamista melua sivun sisällä. On mahdollista vaihtaa koko sivun sisältö, ilma nettä käyttäjä vaihtaa sivua.
+                        JavaScript siis mahdollistaa lähes tulkoon loputtoman määrän sisältöä yhden sivun sisällä, niin kauan kuin sivun omistaja osaa sitä käyttää! Paina nappia minun alla, saadaksesi lisää tietoa, ilman että vaihdat, skrollaat tai lähdet sivulta!
+                    </p>
+                        <script>
+                            function tekstit(){
+                                document.getElementById("teksti").innerHTML =
+                                "Esimerkiksi näin! Nyt saat uutta tietoa yhdellä napin painalluksella! Javascriptin käyttö on helppoa (vaativaa) ja todella hauskaa (nii-no..)."
+                            }
+                        </script>
+                    <div>
+                        <button type="button" onclick="tekstit()">Paina tästä saadaksesi lisää tekstiä!</button>
+                    </div>
+                    <p id="teksti2"> Eli mitä tässä nyt yritän sanoa on se, että JavaScriptillä saa luotua niin sanottua näkymätöntä tietoa tyhjästä. Se on niin yksinkertaista kuin haluaa ja niin monimutkaista kuin mahtaa. Mahdollisuudet ovat loputtomat, ainut ongelma on mielikuvitus.</p>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Slabo+27px&display=swap" rel="stylesheet">
+            </main>
+        </div>
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <a href="https://www.facebook.com/profile.php?id=100077152784502" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kai_katajisto/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <br>
+                        <br>
+                        <li><a href="../sivut/yhteystiedot.html" target="_blank">Ota Yhteyttä</a></li>
+                        <li><a href="https://code.visualstudio.com/" target="_blank">VSC</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+                    <div class="row">
+            </footer>
+        </div>
+    <script>
+    let ylosnappi = document.getElementById("ylos");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 380) {
+     ylos.style.display = "block";
+      } else {
+     ylos.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.documentElement.scrollTop = 0;
+    } 
+    </script>
+</body>
+</html>

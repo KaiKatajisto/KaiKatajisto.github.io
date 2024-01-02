@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="tyylisivut/etusivu.css" />
+            <button onclick="topFunction()" id="ylos" title="Alkuun">Alkuun</button>
+        </head>
+<body>
+        <div>
+            <header>
+                <div class="flex-container">
+                    <h1>Yhdessä opitaan!</h1>
+                </div>
+                <div class="munnav">
+                    <a href="index.html" class="linkki active">Kotisivu</a>
+                    <a href="sivut/materiaali.html" class ="linkki">Materiaali</a>
+                    <a href="sivut/palaute.html" class = "linkki">Palaute</a>
+                    <a href="sivut/yhteystiedot.html" class = "linkki">Yhteystiedot</a>
+                </div> 
+            </header>
+        </div>
+            <main>
+                <h2>Web-ohjelmointi on helpompaa kuin uskot!</h2>
+                    <div>
+                        <p>Nämä sivut tulee olemaan lähes täysin pelkkää filleri tekstiä. Sivun eriosioista löytyy erilaisia toteutuksia, mutta itse sisältö on Lorem Ipsumia.
+                        <br> <br>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>HTML - HyperText Markup Language - Merkkauskieli</li>
+                            <li>CSS - Cascading Style Sheets - Tyylisivut</li>
+                            <li>Hyvät käytännöt</li>
+                            <li>GitHub ja julkaisu</li>
+                        </ol>
+                    </div>
+                <div>
+                    <p>HTML on lyhenne sanoista Hypertext Markup Language, suomennettuna hypertekstin merkintäkieli on avoimesti standardoitu merkintäkieli, jolla voidaan kuvata hyperlinkkejä sisältävää tekstiä eli hypertekstiä. HTML:llä voidaan myös merkitä tekstin rakenne eli esimerkiksi, mikä osa tekstistä on otsikkoa ja mikä leipätekstiä. HTML tunnetaan erityisesti kielenä, jolla internetsivut on kirjoitettu.
+                       HTML5:tä edeltävien HTML-versioiden syntaksi on määritelty SGML:n sovelluksina. HTML 4.01:stä on muokattu myös XML:n sovellukseksi luokiteltava versio XHTML 1.0, ja HTML 5:n luonnoksesta on rinnakkainen XML-versio XHTML 5. </p>
+                </div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Slabo+27px&display=swap" rel="stylesheet">
+                <p><i>Web-ohjelmointi on kivaa ja helppoa, jos vain tajuaa mistä etsiä tietoa!</i></p>
+            </main>
+        </div>
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <a href="https://www.facebook.com/profile.php?id=100077152784502" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kai_katajisto/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <br>
+                        <br>
+                        <li><a href="sivut/yhteystiedot.html" target="_blank">Ota Yhteyttä</a></li>
+                        <li><a href="https://code.visualstudio.com/" target="_blank">VSC</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+                    <div class="row">
+            </footer>
+        </div>
+
+<div>
+    <script>
+
+        let ylosnappi = document.getElementById("ylos");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 380) {
+         ylos.style.display = "block";
+          } else {
+         ylos.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.documentElement.scrollTop = 0;
+        } 
+    </script>
+</div>
+</body>
+</html>

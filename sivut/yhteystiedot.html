@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="../tyylisivut/yhteystiedot.css" />
+            <button onclick="topFunction()" id="ylos" title="Alkuun">Alkuun</button> 
+        </head>
+<body>
+        <div>
+            <header>
+                <div class="flex-container">
+                    <h1>Yhdessä opitaan!</h1>
+                </div>
+                <div class="munnav">
+                    <a href="../index.html" class="linkki">Kotisivu</a>
+                    <a href="materiaali.html" class ="linkki">Materiaali</a>
+                    <a href="palaute.html" class = "linkki">Palaute</a>
+                    <a href="yhteystiedot.html" class = "linkki active">Yhteystiedot</a>
+                </div> 
+            </header>
+        </div>
+            <main>
+                <p>
+                    Olisin tänne lisännyt itsestäni kuvan ja puhelin numeron yms. Mutta ikävä kyllä aika on rajallista ja tehtävänanto ei vaatinut täydellisyyttä.
+                    <br> <br>
+                    Koska tehtävänanto vaatii videon, tässä video. Kiitokset @Nino Souza @pexels.com:
+                    <video width="640" height="440" autoplay controls>
+                    <source src="../media/video.mp4" type="video/mp4">
+
+                      Sinun selain ei ikävä kyllä kannata videosoitinta.
+                    </video>
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisi nulla, gravida nec nisi et, congue eleifend dui. Fusce in maximus dui, et placerat est. Sed lacinia elit sed diam semper venenatis. Curabitur finibus ante semper, dignissim ipsum a, varius sem. Pellentesque tempor id enim non luctus. Phasellus quis erat ac nulla faucibus commodo. Curabitur suscipit a tortor ut cursus.
+                    
+                    Quisque nibh nisl, dictum sit amet vestibulum non, posuere et nulla. Nulla egestas, quam nec viverra pellentesque, sapien leo aliquam nisl, ut pretium metus odio ac ante. Proin consequat, eros vel venenatis rhoncus, metus lorem dignissim eros, vel facilisis arcu ligula vel dolor. Etiam mi sem, porta vitae purus et, blandit vestibulum arcu. Pellentesque non libero efficitur, suscipit lorem ut, elementum ante. Sed vitae tellus ante. Sed lobortis egestas massa. Donec mollis in quam non interdum. Vestibulum molestie at orci quis malesuada. Quisque et nibh iaculis, aliquet diam a, condimentum elit. Suspendisse sollicitudin luctus convallis. Pellentesque semper tellus sem, sed pretium massa pretium non. Curabitur sit amet fringilla nisi. Etiam semper nunc quam, sed mattis ex ultrices eu.
+                    
+                    Maecenas a diam nec dolor porttitor eleifend. Integer congue orci ac eleifend vehicula. Proin rhoncus nunc nisi, sed placerat eros ullamcorper id. Nulla a massa nec elit finibus venenatis et sodales ipsum. In quis eros sed leo vulputate elementum. Etiam ut porttitor enim, congue aliquam lacus. Integer sodales feugiat metus a volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed pulvinar bibendum eros sit amet maximus. Nulla facilisis elementum lacus quis faucibus. Curabitur dapibus sapien ac dolor aliquet dapibus. Nulla nec fermentum augue. Ut viverra, nisi at tempor tristique, diam nunc congue diam, ac interdum nunc magna molestie odio. Aenean mauris nisl, venenatis vulputate molestie et, dictum a sapien. Phasellus vel commodo purus. Nullam sit amet purus eu mi congue rhoncus sit amet quis justo.
+                    
+                    In at leo sollicitudin, consectetur arcu eu, vehicula justo. Nunc ac vulputate urna. Nam varius auctor magna vel suscipit. Ut eget elit aliquet, viverra quam ut, posuere dolor. Nam id tristique turpis, accumsan tempor est. Fusce congue vulputate risus et consectetur. Cras tortor nibh, venenatis in turpis ac, luctus facilisis turpis.
+                    
+                    Mauris volutpat arcu maximus velit egestas aliquet. Pellentesque vitae arcu mauris. Donec in est mauris. Donec sit amet consequat turpis. Quisque posuere arcu eget sem congue sagittis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum iaculis, odio vel pulvinar egestas, felis nisi maximus mi, nec semper felis erat et nisl. Morbi odio est, eleifend vitae viverra eu, tempor in augue. Morbi id aliquet tortor, in congue urna. Praesent pretium rutrum fermentum. </p>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Slabo+27px&display=swap" rel="stylesheet">
+            </main>
+        </div>
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <a href="https://www.facebook.com/profile.php?id=100077152784502" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kai_katajisto/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <br>
+                        <br>
+                        <li><a href="../sivut/yhteystiedot.html" target="_blank">Ota Yhteyttä</a></li>
+                        <li><a href="https://code.visualstudio.com/" target="_blank">VSC</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+                    <div class="row">
+            </footer>
+        </div>
+    <script>
+        let ylosnappi = document.getElementById("ylos");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 380) {
+         ylos.style.display = "block";
+          } else {
+         ylos.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.documentElement.scrollTop = 0;
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Permanent+Marker&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+	/* Tämä koskee kaikkea */
+:root {
+	font-size: 0.5vw;
+}
+
+	/* Navgikaatio palkki */
+.munnav {
+	margin: auto;
+	margin-top: 6vw;
+	background-color: #333;
+	overflow: hidden;
+	padding: 1vw
+}
+
+	/* Navigaatio a-osuus */
+.munnav a {
+	float: middle;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 3vw 3vw;
+	text-decoration: none;
+	font-size: 1.3vw;
+	box-shadow:
+	2px -2px,
+	-2px 2px;
+}
+
+	/* Video */
+video{
+	float: right; 
+	margin: 0.5vw;
+	width: 35vw; 
+	height: 25vw;
+	padding-right: 1vw;
+}
+
+	/* Navigaatio a osuuden hiiren kosketus */
+.munnav a:hover {
+	background-color: #ddd;
+	transition:0.7s;
+	color: black;
+}
+
+	/* Navigaatio palkin aktiivisuus */
+.munnav .active {
+	background-color: #6d6d6d;
+	color: white;
+}
+
+	/* Kehorakenne */
+body{
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color: #151515;
+	text-align: center;
+	margin: auto;
+	overflow-x:hidden;
+}
+
+	/* Otsikko / Yläpalkki / Tervetulo ikkuna*/
+header{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background: 
+	linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+	url(../kuvat/StockPhoto\ Code.jpg);
+	background-size: 100vw;
+	white-space: nowrap;
+
+}
+
+	/* Ensinmäinen otsikko */
+h1{
+	transform: skewY(-3.5deg);
+	font-size: 5vw;
+	padding-top: 5vw;
+	white-space: nowrap;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: .01em;
+	z-index: 1;
+	color: #d8dbff;
+	margin-top: 0vw;
+    text-shadow:
+    -5px -5px 0 #000000,
+    5px -5px 0 #000000,
+    -5px 5px 0 #000000,
+    5px 5px 0 #000000;
+}
+
+	/* Paragraafi */
+p{
+	padding-top: 2vw;
+	padding-inline: 19vw;
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #b8b8b8;
+	font-family: 'Public Sans', sans-serif; 
+	hyphens:auto;
+	margin: 2em 0 0.5em;
+	text-align: left;
+	width: 90%;
+	max-width: 70ch;
+}
+	/* Paragraafi, joka sijaitsee main sisällä */
+.main p{
+	padding-top: 5vw;
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #b8b8b8;
+	font-family: 'Public Sans', sans-serif; 
+	hyphens:auto;
+	margin: 2em 0 0.5em;
+	text-align: left;
+	width: 90%;
+	max-width: 70ch;
+}
+
+	/* Otsikko 2 (joka on lista asioita) */
+h2{
+	align-items: center;
+	font-size: calc(2em + .25vw);
+	font-weight: 400;
+	font-style: italic;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	padding-top: 1vw;
+	line-height: 2em;
+	margin-bottom: 1.5em;
+	color: #b8b8b8;
+}
+
+	/* footteri, eli alaosio sivusta */
+.footer{
+	background:#101010;
+	padding:1vw 0vw;
+	font-family: 'Play', sans-serif;
+	text-align:center;
+}
+
+	/* footterin rivi elementti */
+.footer .row{
+	padding:0.1vw;
+	color:gray;
+	font-size:0.6vw;
+}
+
+	/* footterin rivi a osio */
+.footer .row a{
+	text-decoration:none;
+	color:gray;
+	transition:0.5s;
+	display: inline;
+	margin: auto 1vw;
+}
+
+	/* Footterin row a kosketus */
+.footer .row a:hover{
+	color:#fff;
+}
+
+	/* Footterin rivi listat ul ja li */
+.footer .row ul li{
+	display:block;
+}
+
+	/* Footterin rivi -> Lista */
+.footer .row li{
+	display: inline;
+	font-size: 1vw;
+	margin-top: 1vw;
+}
+
+	/* Footterin a ja i osiot */
+.footer .row a i{
+	font-size:2vw;
+	margin: auto 1vw;
+}
+
+	/* Ylos nappi */
+#ylos {
+	display: none;
+	position: fixed;
+	bottom: 46vw;
+	right: 83vw;
+	z-index: 1;
+	border: none;
+	outline: none;
+	background-color: rgb(75, 75, 75);
+	color: white;
+	cursor: pointer; 
+	padding: 10px;
+	border-radius: 0.5vw;
+	font-size: 22px;
+}
+
+	/* Ylos Napin Kosketus */
+#ylos:hover {
+	background-color: #555;
+  }
